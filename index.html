@@ -2,6 +2,7 @@
 <HEAD>
 <meta charset="UTF-8">
    <font size ="5">Сайт web-студії "Web-DECO"</h></font>
+   <script src="js/clock1.js"></script>
    <script type="text/javascript">
 function send()
 {    var valid =true;
@@ -30,13 +31,17 @@ function send()
         font-size: 2em;
     }
 </style> 
-</HEAD>
-<BODY background= "images/bg.jpg">
-<table border="1" align="center" cellpadding="10" width="10">
+<script>
+window.onload = function() {
+setInterval(clockPainting, 1000);  }    
+</script>
+  </HEAD>
+  <BODY background= "images/bg.jpg">
+      <table border="1" align="center" cellpadding="10" width="10">
 			<tr>
 				<td background="images/bg-3.jpg" colspan="2" height="150" align="right" hspace="5">
 				 <font size="5" color="Maroon"><h1 class="shadowtext">Сайт web-студії "Web-DECO"</h1></font></td>
-      </tr><tr>
+                </tr><tr>
 	  <td colspan="2">
             <font size="4"><b>
             <a href="#">Головна</a>&nbsp;&nbsp;
@@ -46,7 +51,8 @@ function send()
             <a href="#">Зареєстровані</a>&nbsp;&nbsp;
           </b></font></td>
 				<td width="30%" valign="top"> Left menu</td>
-				
+<center><canvas id="canvas" height="120" width="120"></canvas></center>
+<hr>
 				 <font size="5" color="navy"><h2>Новини</h2></font>
                 <font size="5" >
             <ul>
